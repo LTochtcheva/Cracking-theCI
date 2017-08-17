@@ -2,10 +2,14 @@ import { expect } from 'chai';
 import func from '../solutions/chapter1_ArraysAndStrings/1.1_isUnique.js'
 
 describe('check if string has all unique chars:\n', () => {
+  it('should return true for empty string', () => {
+    expect(func('')).to.equal(true);
+  });
+
   const rightStrings = [
     'abcdefg',
     'jdkWMpz02.69',
-    'bASRklp-45//12M'
+    'bASRklp-45/12M'
   ]
   rightStrings.forEach(str =>
     {
