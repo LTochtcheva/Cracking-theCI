@@ -17,13 +17,4 @@ describe('method to check if two strings are one edit away:\n', () => {
     expect(func('Labrador', 'Lab')).to.equal(false);
   });
 
-  // it('should handle falsy string values correctly', () => {
-  //   expect(func('', '')).to.equal(true);
-  //   expect(func(null, null)).to.equal(true);
-  //   expect(func(undefined, undefined)).to.equal(true);
-  //   expect(func('', null)).to.equal(false);
-  //   expect(func(undefined, '')).to.equal(false);
-  //   expect(func(null, undefined)).to.equal(false);
-  // });
-
 });
