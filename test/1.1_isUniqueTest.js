@@ -7,7 +7,7 @@ describe('check if string has all unique chars:\n', () => {
 
     let func = funcs[key];
 
-    it('should return true for empty string', () => {
+    it(`should return true for empty string`, () => {
       expect(func('')).to.equal(true);
     });
 

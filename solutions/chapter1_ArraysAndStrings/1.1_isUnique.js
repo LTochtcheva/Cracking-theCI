@@ -15,7 +15,7 @@ export const funcSet = (str) => {
 export const funcSort = (str) => {
   let sortedStr = str.split('').sort();
   for (let i = 0; i < sortedStr.length; i++) {
-    if (sortedStr[i] === sortedStr[i+1]) return false;
+    if (sortedStr[i] === sortedStr[i + 1]) return false;
   }
   return true;
 }
