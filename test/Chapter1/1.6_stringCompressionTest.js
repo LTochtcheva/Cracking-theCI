@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import func from '../solutions/chapter1_ArraysAndStrings/1.6_stringCompression.js';
+import func from '../../solutions/chapter1_ArraysAndStrings/1.6_stringCompression.js';
 
 describe('method to compress a string with counts:\n', () => {
 

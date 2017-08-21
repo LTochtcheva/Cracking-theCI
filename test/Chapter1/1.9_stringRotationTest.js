@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import func from '../solutions/chapter1_ArraysAndStrings/1.9_stringRotation.js';
+import func from '../../solutions/chapter1_ArraysAndStrings/1.9_stringRotation.js';
 
 describe('method to check if str2 is a rotation of str1 using one call to isSubstring:\n', () => {
 

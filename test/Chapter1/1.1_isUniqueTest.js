@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import * as funcs from '../solutions/chapter1_ArraysAndStrings/1.1_isUnique.js'
+import * as funcs from '../../solutions/chapter1_ArraysAndStrings/1.1_isUnique.js'
 
 describe('check if string has all unique chars:\n', () => {
 

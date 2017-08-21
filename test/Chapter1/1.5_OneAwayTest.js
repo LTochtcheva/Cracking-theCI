@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import func from '../solutions/chapter1_ArraysAndStrings/1.5_OneAway.js';
+import func from '../../solutions/chapter1_ArraysAndStrings/1.5_OneAway.js';
 
 describe('method to check if two strings are one edit away:\n', () => {
 

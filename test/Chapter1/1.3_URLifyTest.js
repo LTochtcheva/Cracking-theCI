@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import func from '../solutions/chapter1_ArraysAndStrings/1.3_URLify.js';
+import func from '../../solutions/chapter1_ArraysAndStrings/1.3_URLify.js';
 
 
 describe('method to replace spaces in a string with "%20":\n', () => {

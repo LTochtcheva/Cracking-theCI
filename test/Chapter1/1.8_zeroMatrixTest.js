@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import func from '../solutions/chapter1_ArraysAndStrings/1.8_zeroMatrix.js';
+import func from '../../solutions/chapter1_ArraysAndStrings/1.8_zeroMatrix.js';
 
 describe('method that given matrix with element 0 sets its row and column to 0:\n', () => {
 

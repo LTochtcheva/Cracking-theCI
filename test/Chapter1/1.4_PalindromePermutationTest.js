@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import func from '../solutions/chapter1_ArraysAndStrings/1.4_PalindromePermutation.js';
+import func from '../../solutions/chapter1_ArraysAndStrings/1.4_PalindromePermutation.js';
 
 describe('method to check if given is a permutation of palindrome:\n', () => {
 

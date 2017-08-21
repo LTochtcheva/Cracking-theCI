@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import func from '../solutions/chapter1_ArraysAndStrings/1.2_CheckPermutation.js';
+import func from '../../solutions/chapter1_ArraysAndStrings/1.2_CheckPermutation.js';
 
 describe('check if one string is a permutation of the other:\n', () => {
 
