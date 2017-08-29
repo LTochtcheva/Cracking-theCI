@@ -4,20 +4,36 @@
 
 export default (list) => {
 
+  // if (!list || !list.next) return list
+
+  // const set = new Set()
+  // set.add(list.val)
+
+  // while (list.next) {
+
+  //   if (set.has(list.next.val)) {
+  //     list.next = list.next.next
+  //   }
+  //   else {
+  //     set.add(list.next.val)
+  //     list = list.next
+  //   }
+  // }
+
+
   if (!list || !list.next) return list
-
   const set = new Set()
-  set.add(list.val)
 
-  while (list.next) {
-
-    if (set.has(list.next.val)) {
-      list.next = list.next.next
+  let prev = null
+  while (list) {
+    if (set.has(list.val)) {
+      prev.next = list.next
     }
     else {
-      set.add(list.next.val)
-      list = list.next
+      set.add(list.val)
+      prev = list
     }
+    list = list.next
   }
 }
 
