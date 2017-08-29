@@ -18,8 +18,9 @@ export function arrayToLinkedList(arr) {
   return list
 }
 export function linkedListToArray(list) {
-  let arr = [],
-    node = list
+  let arr = []
+  let node = list
+
   while (node !== null) {
     arr.push(node.val)
     node = node.next

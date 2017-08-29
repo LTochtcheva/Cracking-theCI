@@ -18,7 +18,8 @@ describe('method to remove duplicates from linked list:\n', () => {
   testData.forEach(data => {
     it(`correctly changes given list:  ${data.input} `, () => {
       let list = utils.arrayToLinkedList(data.input)
-      expect(utils.linkedListToArray(func(list))).to.eql(data.result)
+      func(list)
+      expect(utils.linkedListToArray(list)).to.eql(data.result)
     })
   })
 
