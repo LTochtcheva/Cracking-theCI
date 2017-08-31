@@ -22,7 +22,7 @@ describe('method to find kth to last element of linked list:\n', () => {
   testData.forEach(data => {
     it(`returns ${data.k}th to the last element of ${data.input}`, () => {
       let list = utils.arrayToLinkedList(data.input)
-      expect(func(list)).to.eql(data.result)
+      expect(func(list, data.k)).to.eql(data.result)
     })
   })
 

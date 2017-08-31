@@ -6,5 +6,12 @@
 //return null if list is not long enough
 
 export default (list, k) => {
-
+  const places = {}
+  let pointer = 0
+  while (list) {
+    places[pointer] = list.val
+    pointer ++
+    list = list.next
+  }
+  return places[pointer - 1 - k] || null
 }
