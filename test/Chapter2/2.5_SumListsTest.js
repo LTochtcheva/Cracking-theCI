@@ -12,15 +12,15 @@ describe.only('Sum two numbers represented by a linked list:\n', () => {
     {list1: [1, 2, 1, 3],
      list2: [3, 4],
      result1: [4, 6, 1, 3],
-     result2: [7, 4, 2, 1]},
+     result2: [1, 2, 4, 7]},
     {list1: [1, 2],
      list2: [3, 4, 5],
      result1: [4, 6, 5],
-     result2: [7, 5, 3]},
+     result2: [3, 5, 7]},
     {list1: [1, 2],
      list2: [9, 8],
      result1: [0, 1, 1],
-     result2: [0, 1, 1]}
+     result2: [1, 1, 0]}
   ]
 
     testData.forEach(data => {
