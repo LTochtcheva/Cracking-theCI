@@ -20,9 +20,13 @@ export const sumForward = (list1, list2) => {
   if (diff > 0) list2 = makeEql(list2, diff)
   if (diff < 0) list1 = makeEql(list1, Math.abs(diff))
 
-  return sumEql(list1, list2)
-}
+  const sum =  sumEql(list1, list2)
 
+  if (!sum.plusOne) return sum.nodeSum
+  else return insertBefore(sum.nodeSum, sum.plusOne)
+}
+// helper functions:
+//~~ -------------------------- ~~
 const getLength = (list) => {
   let length = 0
   while (list) {
@@ -40,36 +44,30 @@ const makeEql = (list, diff) => {
   }
  return list
 }
-const sumEql = (x, y) => {
-  console.log('x: ',x,'y: ',y)
-  if (!x && !y) return null
-  let sumList = {val: null, next: null}
-  let plusOne
-  if (!x.next) plusOne = 0
-  else {
-    let nextSum = x.next.val + y.next.val
-    plusOne = nextSum > 9 ? 1 : 0}
-
-    let value = x.val + y.val + plusOne
-    console.log('value: ',value) //11
-    if (value > 9) {
-      sumList.val = value%10
-      console.log('sumList before insert: ', sumList)
-      sumList = insertBefore(sumList, 1)
-      console.log('sumList after insert', sumList)//!!!!!
-    }
-    else {
-      sumList.val = value
-    }
-
-    sumList.next = sumEql(x.next, y.next)
-    console.log('sumList: ',sumList)
- return sumList
-}
 const insertBefore = (list, val) => {
-  console.log(list,val)
   let newNode = {val: val, next: null}
   if (list) newNode.next = list
   return  newNode
 }
+class PartialSum {
+  constructor() {
+    this.nodeSum = null;
+    this.plusOne = 0;
+  }
+}
+//~~ --------------------------- ~~
+
+const sumEql = (x, y) => {
+  if (!x && !y) return new PartialSum()
+
+  const sum = sumEql(x.next, y.next),
+        value = x.val + y.val + sum.plusOne,
+        sumNode = insertBefore(sum.nodeSum, value % 10)
+
+  sum.nodeSum = sumNode
+  sum.plusOne = Math.floor(value / 10)
+
+ return sum
+}
+
 

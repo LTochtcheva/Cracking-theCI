@@ -2,7 +2,7 @@ import { expect } from 'chai'
 import * as utils from './utilsChapter2'
 import {sumReversed, sumForward} from '../../solutions/chapter2_LinkedLists/2.5_SumLists'
 
-describe.only('Sum two numbers represented by a linked list:\n', () => {
+describe('Sum two numbers represented by a linked list:\n', () => {
 
     let testData = [
     {list1: [1, 2],
@@ -24,7 +24,7 @@ describe.only('Sum two numbers represented by a linked list:\n', () => {
   ]
 
     testData.forEach(data => {
-      xit(`should return a sum of nums ${data.list1} and ${data.list2},represented by reversed linked list: `, () => {
+      it(`should return a sum of nums ${data.list1} and ${data.list2},represented by reversed linked list: `, () => {
         let list1 = utils.arrayToLinkedList(data.list1)
         let list2 = utils.arrayToLinkedList(data.list2)
         let sum = sumReversed(list1, list2)
