@@ -28,4 +28,20 @@ export function linkedListToArray(list) {
 
   return arr
 }
-
+export function createLinkedList() {
+  return {
+    head: null,
+    tail: null
+  };
+}
+export function pushSingle(list, value) {
+  const node = createNode(value);
+  if (list.head) {
+    list.tail.next = node;
+    list.tail = node;
+  }
+  else {
+    list.head = node;
+    list.tail = node;
+  }
+}
