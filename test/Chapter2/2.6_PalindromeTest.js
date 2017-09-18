@@ -2,7 +2,7 @@ import { expect } from 'chai'
 import * as utils from './utilsChapter2'
 import func  from '../../solutions/chapter2_LinkedLists/2.6_Palindrome'
 
-describe.only('method to check if linked list is a palindrome:\n', () => {
+describe('method to check if linked list is a palindrome:\n', () => {
   const good = [
     [1, 1, 1],
     [1, 0, 1],

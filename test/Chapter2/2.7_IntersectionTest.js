@@ -2,7 +2,7 @@ import { expect } from 'chai'
 import * as utils from './utilsChapter2'
 import func from '../../solutions/chapter2_LinkedLists/2.7_Intersection'
 
-describe('Determine if two linked lists intersect:\n', () => {
+describe.only('Determine if two linked lists intersect:\n', () => {
 
     let testData = [
     {list1: [1, 2],
@@ -17,7 +17,7 @@ describe('Determine if two linked lists intersect:\n', () => {
       it('should return a undefined if linked lists do not intersect: ', () => {
         let list1 = utils.arrayToLinkedList(data.list1)
         let list2 = utils.arrayToLinkedList(data.list2)
-        expect(func(list1, list2)).to.be(undefined)
+        expect(func(list1, list2)).to.be.undefined
       })
     })
 
