@@ -2,7 +2,7 @@ import { expect } from 'chai'
 import * as utils from './utilsChapter2'
 import func from '../../solutions/chapter2_LinkedLists/2.7_Intersection'
 
-describe.only('Determine if two linked lists intersect:\n', () => {
+describe('Determine if two linked lists intersect:\n', () => {
 
     let testData = [
     {list1: [1, 2],

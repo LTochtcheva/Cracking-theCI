@@ -45,6 +45,11 @@ export function pushSingle(list, value) {
     list.tail = node;
   }
 }
+export function push(list) {
+  for (let i = 1; i < arguments.length; ++i) {
+    pushSingle(list, arguments[i]);
+  }
+}
 export const getListLength = (list) => {
   let length = 0
   while (list) {
