@@ -3,5 +3,13 @@
 // A->B->C->D->E->C. return C
 
 export default (list) => {
-  return true
+  if (!list) return null
+  let set = new Set()
+  let current = list
+  while (current) {
+    if (set.has(current.val)) return current
+    set.add(current.val)
+    current = current.next
+  }
+  return null
 }
