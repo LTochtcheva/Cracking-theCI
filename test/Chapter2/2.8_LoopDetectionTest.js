@@ -2,7 +2,7 @@ import { expect } from 'chai'
 import * as utils from './utilsChapter2'
 import func from '../../solutions/chapter2_LinkedLists/2.8_LoopDetection'
 
-describe.only('Function that returns the begining of the loop: \n', () => {
+describe('Function that returns the begining of the loop: \n', () => {
   beforeEach(function()  {
     this.list = utils.createLinkedList()
     })
