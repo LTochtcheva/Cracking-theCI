@@ -3,7 +3,7 @@ import bubble from '../../solutions/practice/bubbleSort'
 import { mergeFunc, sortFunc } from '../../solutions/practice/mergeSort'
 import { quickSort } from '../../solutions/practice/quickSort'
 
-describe.only('Sorting algorithms', () => {
+describe('Sorting algorithms', () => {
   it('should sort an array using bubble sort', () => {
     expect(bubble([2, 5, 8, 3, -1])).to.eql([-1, 2, 3, 5, 8])
   })
