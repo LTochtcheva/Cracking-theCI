@@ -7,7 +7,6 @@ testStack.push(2)
 testStack.push(3)
 testStack.push(4)
 testStack.push(5)
-console.log('size: ', testStack.size)
 
 describe.only('Stack Data structure', () => {
   it('has a push method to add elements to the top', () => {
