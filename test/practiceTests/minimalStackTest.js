@@ -8,7 +8,7 @@ testStack.push(3)
 testStack.push(4)
 testStack.push(5)
 
-describe.only('Stack Data structure', () => {
+describe('Stack Data structure', () => {
   it('has a push method to add elements to the top', () => {
     expect(testStack.top.value).to.equal(5)
     expect(testStack.size).to.equal(5)
