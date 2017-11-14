@@ -3,8 +3,9 @@ import getPerm from '../../solutions/practice/stringPermutations';
 
 describe.only('string permutations function', () => {
   const testStrings = ['one', 'app','nn'];
-  const results = [[ 'eon', 'eno', 'neo', 'noe', 'one', 'oen'],
-                   [ 'app', 'pap', 'ppa'],
+  const results = [
+                   [ 'eno', 'neo', 'noe', 'eon', 'oen', 'one' ],
+                   [ 'ppa', 'pap', 'app' ],
                    [ 'nn' ]
                    ];
   testStrings.forEach((str, i) => {
